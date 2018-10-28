@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<smooks-resource-list xmlns="http://www.milyn.org/xsd/smooks-1.1.xsd" xmlns:jb="http://www.milyn.org/xsd/smooks/javabean-1.2.xsd">
+
+  
+    <jb:bean beanId="order" class="com.javainuse.order" createOnElement="order">
+        <jb:wiring property="header" beanIdRef="header" />
+        <jb:wiring property="orderItems" beanIdRef="orderItems" />
+    </jb:bean>
+
+   
+</smooks-resource-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<smooks-resource-list xmlns="http://www.milyn.org/xsd/smooks-1.1.xsd" xmlns:jb="http://www.milyn.org/xsd/smooks/javabean-1.2.xsd">
+
+<jb:bean beanId="orderItem" class="com.javainuse.OrderItem" createOnElement="order-item">
+        <jb:value property="productId" decoder="Long" data="order-item/product" />
+        <jb:value property="quantity" decoder="Integer" data="order-item/quantity" />
+        <jb:value property="price" decoder="Double" data="order-item/price" />
+    </jb:bean>
+
+</smooks-resource-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+</bean>
+<bean id="sqlComponent"
+	class="org.apache.camel.component.sql.SqlComponent">
+	<property name="dataSource" ref="dataSource" />
+</bean>
+<bean id="OrderMapper" class="com.javainuse.OrderMapper" />
+</beans>
